@@ -6,7 +6,7 @@
 
 <li><p>To run the ShortlistClasses.py file:</p>
 <ul>
-<li>Please download the videos and the json file from this [link](https://github.com/dxli94/WLASL)</li>
+<li>Please download the videos and the json file from [here](https://github.com/dxli94/WLASL)</li>
 </ul></li>
 
 
