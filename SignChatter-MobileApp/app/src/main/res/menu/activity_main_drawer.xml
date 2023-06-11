@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="ASL Translator" />
+        <item
+            android:id="@+id/nav_psl"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="PSL Translator" />
+        <item
+            android:id="@+id/nav_dictionary"
+            android:icon="@drawable/baseline_search_24"
+            android:title="ASL Dictionary" />
+        <item
+            android:id="@+id/nav_dictionaryPSL"
+            android:icon="@drawable/baseline_search_24"
+            android:title="PSL Dictionary" />
+        <item
+            android:id="@+id/nav_instructions"
+            android:icon="@drawable/baseline_help_24"
+            android:title="@string/instructions" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_info_24"
+            android:title="@string/about" />
+    </group>
+</menu>
