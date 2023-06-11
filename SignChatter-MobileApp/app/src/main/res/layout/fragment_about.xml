@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.AboutFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/signchatter_is_the_world_s_first_sign_language_translation_app_that_takes_body_movement_into_account_while_detecting_and_translating_signs_hence_giving_more_accurate_translations_and_being_able_to_translate_a_lot_more_signs_than_singular_frame_based_sign_language_translation_apps_the_app_currently_supports_only_american_sign_language_but_support_for_other_languages_will_be_added_soon"/>
+    </LinearLayout>
+</ScrollView>

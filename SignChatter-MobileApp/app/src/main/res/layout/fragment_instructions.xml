@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.InstructionsFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/follow_these_instructions_for_better_predictions"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/_1_stand_about_2_2_5m_6_8ft_away_from_the_camera_n2_perform_only_one_sign_per_video_and_make_sure_the_entire_sign_is_recorded_in_the_video_n3_make_sure_there_is_plenty_of_light_while_making_the_video_n4_ensure_there_isn_t_any_other_person_present_in_the_background_n5_videos_should_be_about_3_6_seconds_in_length" />
+    </LinearLayout>
+
+</ScrollView>
