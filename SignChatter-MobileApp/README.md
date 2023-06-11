@@ -2,7 +2,7 @@
 
 *Records a 5-10 seconds video and returns a string of performed action.*  
 
-<p>In order to run the project on Android stuido, follow these steps:</p>
+<p>In order to run the project on AndroidStudio, follow these steps:</p>
 <ol>
 <li>Download the complete project.</li>
 <li>Extract the files.</li>

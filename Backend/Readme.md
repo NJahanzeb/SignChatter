@@ -6,7 +6,7 @@
 
 <li><p>To run the ShortlistClasses.py file:</p>
 <ul>
-<li>Please download the videos and the json file from this [link](https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed)</li>
+<li>Please download the videos and the json file from this [link](https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed/)</li>
 </ul></li>
 
 
@@ -74,3 +74,19 @@ This model is capable of recognizing and translating the signs of the following 
 
 
 <li>Note : Please use 0.3 as the argument for dropout layers when trying any of the 30 Classes models</li></ul></li>
+
+
+<p>Details on the files:</p>
+<ul>
+<li>ShortlistClasses.py is for finding those classes that contain <strong>at least</strong> a set number of videos. The script also makes folders for each of those classes. Moreover, the script also generates 55 subfolders for each classes (55 due to the augmentations that will come later)</li>
+
+<li>Augmentation.py is for extracting frames from the videos, performing different operations on them (crop, rescale, skew, combinations), and then saving them in their designated folders</li>
+
+<li>KeypointExtraction.py is for going through all of the classes and their augmentations and generating a keypoints file for each frame which is then saved as an np array file (you might want to run the ShortlistClasses.py script again to make folders and subfolders for storing np array files)</li>
+
+<li>Keypoint_Concat.py file is for going through all the generated np array files and concatenating them into one giant 3D array which can then be fed to the model for training purposes</li>
+
+<li>Both .ipynb notebooks are for training ASL and PSL models</li>
+
+<li>TestModel.py is for testing the model with new videos to see how it performs in real-world environment</li>
+</ul>
