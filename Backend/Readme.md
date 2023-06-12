@@ -51,42 +51,42 @@
 <ul>
 <li>10C_50F_OG2.h5<br>
 This model is capable of recognizing and translating the signs of the following 10 words:<br>
-'banana', 'bar', 'basement', 'basketball', 'bath', 'bathroom', 'bear', 'beard', 'bed', 'bedroom'</li>
+'banana', 'bar', 'basement', 'basketball', 'bath', 'bathroom', 'bear', 'beard', 'bed', 'bedroom'</li><br>
 
 
 <li>20C_50F_128B_20T_sorted_55A_A3_30D.h5<br>
 This model is capable of recognizing and translating the signs of the following 20 words:<br>
 'about', 'accident', 'africa', 'afternoon', 'again', 'all', 'always', 'animal', 'any', 'apple',<br>
-'approve', 'argue', 'arrive', 'aunt', 'baby', 'back', 'bake', 'balance', 'bald', 'ball'</li>
+'approve', 'argue', 'arrive', 'aunt', 'baby', 'back', 'bake', 'balance', 'bald', 'ball'</li><br>
 
 
 <li>30C_50F_128B_5T_sorted.h5<br>
 This model is capable of recognizing and translating the signs of the following 30 words:<br>
 'about', 'accident', 'africa', 'afternoon', 'again', 'all', 'always', 'animal', 'any', 'apple',<br>
 'approve', 'argue', 'arrive', 'aunt', 'baby', 'back', 'bake', 'balance', 'bald', 'ball',<br>
-'banana', 'bar', 'basement', 'basketball', 'bath', 'bathroom', 'bear', 'beard', 'bed', 'bedroom'</li>
+'banana', 'bar', 'basement', 'basketball', 'bath', 'bathroom', 'bear', 'beard', 'bed', 'bedroom'</li><br>
 
 
 <li>PSL_15C_45F_64B_20T_.h5<br>
 This model is capable of recognizing and translating the signs of the following 15 words:<br>
 "احتیاط" , خطرناک" ,"بہت پرجوش" ,"دور" ,"مضحکہ خیز" ,"اچھی" ,"صحت مند" ,"بھاری" ,"اہم" ,"ذہین",<br>
-"دلچسپ" ,"نہیں", "جلدی" ,"تیار", "جی ہاں"</li>
+"دلچسپ" ,"نہیں", "جلدی" ,"تیار", "جی ہاں"</li><br>
 
 
-<li>Note : Please use 0.3 as the argument for dropout layers when trying any of the 30 Classes models</li></ul></li>
+<li>Note : Please use 0.3 as the argument for dropout layers when trying any of the 30 Classes models</li></ul></li><br>
 
 
 <p>Details on the files:</p>
 <ul>
-<li>ShortlistClasses.py is for finding those classes that contain <strong>at least</strong> a set number of videos. The script also makes folders for each of those classes. Moreover, the script also generates 55 subfolders for each classes (55 due to the augmentations that will come later)</li>
+<li><strong>ShortlistClasses.py</strong> is for finding those classes that contain <strong>at least</strong> a set number of videos. The script also makes folders for each of those classes. Moreover, the script also generates 55 subfolders for each classes (55 due to the augmentations that will come later)</li><br>
 
-<li>Augmentation.py is for extracting frames from the videos, performing different operations on them (crop, rescale, skew, combinations), and then saving them in their designated folders</li>
+<li><strong>Augmentation.py</strong> is for extracting frames from the videos, performing different operations on them (crop, rescale, skew, combinations), and then saving them in their designated folders</li><br>
 
-<li>KeypointExtraction.py is for going through all of the classes and their augmentations and generating a keypoints file for each frame which is then saved as an np array file (you might want to run the ShortlistClasses.py script again to make folders and subfolders for storing np array files)</li>
+<li><strong>KeypointExtraction.py</strong> is for going through all of the classes and their augmentations and generating a keypoints file for each frame which is then saved as an np array file (you might want to run the ShortlistClasses.py script again to make folders and subfolders for storing np array files)</li><br>
 
-<li>Keypoint_Concat.py file is for going through all the generated np array files and concatenating them into one giant 3D array which can then be fed to the model for training purposes</li>
+<li><strong>Keypoint_Concat.py</strong> file is for going through all the generated np array files and concatenating them into one giant 3D array which can then be fed to the model for training purposes</li><br>
 
-<li>Both .ipynb notebooks are for training ASL and PSL models</li>
+<li>Both <strong>.ipynb notebooks</strong> are for training ASL and PSL models</li><br>
 
-<li>TestModel.py is for testing the model with new videos to see how it performs in real-world environment</li>
+<li><strong>TestModel.py</strong> is for testing the model with new videos to see how it performs in real-world environment</li><br>
 </ul>
