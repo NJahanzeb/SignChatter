@@ -1,7 +1,7 @@
 <h1>SignChatter</h1>
 
-<p>App demo video: https://youtu.be/yTiaujF4e8A  
-Backend demo video: https://youtu.be/NV_Mu1_D9Bc</p>
+<p>App demo video: https://youtu.be/yTiaujF4e8A\
+  Backend demo video: https://youtu.be/NV_Mu1_D9Bc</p>
 
 <p>SignChatter is a sign language translation system that generates predictions for videos. It works by taking a 5-10 seconds video of a person performing a single sign as input. The video can be newly recorded or selected from storage. The video is sent to the back-end via an API where the script first extracts multiple frames from it, the script then extracts keypoints from the frames and it then feeds these keypoints to the LSTM model.</p>
 
